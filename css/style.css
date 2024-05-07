@@ -46,7 +46,10 @@ body{
 }
 .description__item {
     /* background: blue; */
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
+    width: 100%;
     height: 75vh;
 }
 .description__buttom{
@@ -59,9 +62,25 @@ body{
 .description__container {
     /* background: violet; */
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    width: 100%;
     margin: 0 var(--layout-description-container-x);
     margin-bottom: var(--layout-description-container-y);
+}
+
+.description__image{
+    /* background: green; */
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+
+.description__image img{
+    /* background: green; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .main__section {
