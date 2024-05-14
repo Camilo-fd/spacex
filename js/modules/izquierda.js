@@ -4,15 +4,15 @@ export const Izquierdo1 = async() => {
 
     let dataUpdate = []
 
-    for (let cohete of data) {
-        dataUpdate.push({
-          name: cohete.name,
-          description: cohete.description,
-          id: cohete.id,
-          flickr_images: cohete.flickr_images,
-        })
-    }
+    // for (let cohete of data) {
+    //     dataUpdate.push({
+    //       name: cohete.name,
+    //       description: cohete.description,
+    //       id: cohete.id,
+    //       flickr_images: cohete.flickr_images,
+    //     })
+    // }
 
-    return dataUpdate
+    return [data[0]]
     
 }
