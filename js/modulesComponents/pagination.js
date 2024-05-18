@@ -35,6 +35,7 @@ import {
     getAllCapsules 
 } from "../modules/capsules.js";
 
+
 import {
     getAllCrew,
     getAllCrewId
@@ -244,6 +245,14 @@ export const paginationCapsules = async(page=1, limit=4)=>{
     return div;
 }
 
+// ----------------------------------------------------------
+
+//modulo company 
+export const getCompany = async () => {
+    let res = await fetch("https://api.spacexdata.com/v4/company");
+    let data = await res.json();
+    return data;
+  };
 
 // ----------------------------------------------------------
 
