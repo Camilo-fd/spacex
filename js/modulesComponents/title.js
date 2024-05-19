@@ -33,3 +33,9 @@ export const nameLandpads = async(name)=>{
     header__title.innerHTML = "";
     header__title.textContent = name;
 }
+
+export const nameLaunches = async(name)=>{
+    let header__title = document.querySelector("#header__title");
+    header__title.innerHTML = "";
+    header__title.textContent = name;
+}

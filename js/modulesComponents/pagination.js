@@ -8,7 +8,8 @@ import {
     nameCrew,
     nameDragons,
     nameHistory,
-    nameLandpads
+    nameLandpads,
+    nameLaunches
 } from "./title.js";
 import { 
     informationRockets,
@@ -77,7 +78,9 @@ import {
 
 import {
     getAllLaunches,
-    getAllLaunchesId
+    getAllLaunchesId,
+    informationOfLaunches1,
+    informationOfLaunches2
 } from "../modules/launches.js"
 
 import {
@@ -587,7 +590,7 @@ const getLandpadsId = async(e)=>{
     let landpads = await getAllLandpadsId(e.target.id);
     console.log(landpads);
     await clear()
-    await nameHistory(landpads.name)
+    await nameLandpads(landpads.name)
     await informationOfLandpads1(landpads)
     await informationOfLandpads2(landpads)
 
@@ -654,8 +657,12 @@ const getLaunchesId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    let crew = await getAllLaunchesId(e.target.id);
-    console.log(crew);
+    let launches = await getAllLaunchesId(e.target.id);
+    console.log(launches);
+    await clear()
+    await nameLaunches(launches.name)
+    await informationOfLaunches1(launches)
+    await informationOfLaunches2(launches)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
