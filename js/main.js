@@ -123,4 +123,4 @@ launchpads.addEventListener("click", async(e)=>{
     paginacion.append(await paginationLaunchpads())
 })
 
-launches.click();
+launchpads.click();

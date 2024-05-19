@@ -9,7 +9,8 @@ import {
     nameDragons,
     nameHistory,
     nameLandpads,
-    nameLaunches
+    nameLaunches,
+    nameLaunchpads
 } from "./title.js";
 import { 
     informationRockets,
@@ -85,7 +86,9 @@ import {
 
 import {
     getAllLaunchpads,
-    getAllLaunchpadsId
+    getAllLaunchpadsId,
+    informationOfLaunchpads1,
+    informationOfLaunchpads2
 } from "../modules/launchpads.js"
 
 export const load = async()=>{
@@ -727,8 +730,12 @@ const getLaunchpadsId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    let crew = await getAllLaunchpadsId(e.target.id);
-    console.log(crew);
+    let launchpads = await getAllLaunchpadsId(e.target.id);
+    console.log(launchpads);
+    await clear()
+    await nameLaunchpads(launchpads.name)
+    await informationOfLaunchpads1(launchpads)
+    await informationOfLaunchpads2(launchpads)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
