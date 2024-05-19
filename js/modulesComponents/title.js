@@ -27,3 +27,9 @@ export const nameHistory = async(name)=>{
     header__title.innerHTML = "";
     header__title.textContent = name;
 }
+
+export const nameLandpads = async(name)=>{
+    let header__title = document.querySelector("#header__title");
+    header__title.innerHTML = "";
+    header__title.textContent = name;
+}
