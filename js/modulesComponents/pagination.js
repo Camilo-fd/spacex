@@ -4,7 +4,8 @@ import {
 } from "../modules/rockets.js";
 import { 
     nameRockets,
-    nameCores
+    nameCores,
+    nameCrew
 } from "./title.js";
 import { 
     informationRockets,
@@ -45,7 +46,9 @@ import {
 
 import {
     getAllCrew,
-    getAllCrewId
+    getAllCrewId,
+    informationOfCrew1,
+    informationOfCrew2
 } from "../modules/crew.js"
 
 import {
@@ -363,6 +366,10 @@ const getCrewId = async(e)=>{
 
     let crew = await getAllCrewId(e.target.id);
     console.log(crew);
+    await clear()
+    await nameCrew(crew.name)
+    await informationOfCrew1(crew)
+    await informationOfCrew2(crew)
     
 
     // await informationRockets(Rocket.country, Rocket.description)
