@@ -123,4 +123,4 @@ launchpads.addEventListener("click", async(e)=>{
     paginacion.append(await paginationLaunchpads())
 })
 
-rocket.click();
+cores.click();

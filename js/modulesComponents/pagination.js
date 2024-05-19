@@ -3,7 +3,8 @@ import {
     getAllRocketsId
 } from "../modules/rockets.js";
 import { 
-    nameRockets 
+    nameRockets,
+    nameCores
 } from "./title.js";
 import { 
     informationRockets,
@@ -37,7 +38,9 @@ import {
 
 import {
     getAllCores,
-    getAllCoresId
+    getAllCoresId,
+    informationOfCores1,
+    informationOfCores2
 } from "../modules/cores.js"
 
 import {
@@ -288,8 +291,12 @@ const getCoresId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    let crew = await getAllCoresId(e.target.id);
-    console.log(crew);
+    let cores = await getAllCoresId(e.target.id);
+    console.log(cores);
+    await clear()
+    await nameCores(cores.serial)
+    await informationOfCores1(cores)
+    await informationOfCores2(cores)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
@@ -297,7 +304,7 @@ const getCoresId = async(e)=>{
 
 export const paginationCores = async(page=1, limit=4)=>{  
      
-    let {docs, pagingCounter, totalPages, nextPage} = await getAllCrew(page, limit)
+    let {docs, pagingCounter, totalPages, nextPage} = await getAllCores(page, limit)
 
     let div = document.createElement("div");
     div.classList.add("buttom__paginacion")
@@ -356,6 +363,7 @@ const getCrewId = async(e)=>{
 
     let crew = await getAllCrewId(e.target.id);
     console.log(crew);
+    
 
     // await informationRockets(Rocket.country, Rocket.description)
     

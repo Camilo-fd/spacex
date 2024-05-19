@@ -9,7 +9,9 @@
 }
 
 body {
-    background: linear-gradient(var(--color--one), var(--color--one--rgba));
+    /* background: linear-gradient(var(--color--one), var(--color--one--rgba)); */
+    background-image: url(../storage/img/icons/espacio.jpeg);
+    /* background-repeat: no-repeat;     */
 }
 
 *::-webkit-scrollbar {
