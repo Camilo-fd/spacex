@@ -6,7 +6,8 @@ import {
     nameRockets,
     nameCores,
     nameCrew,
-    nameDragons
+    nameDragons,
+    nameHistory
 } from "./title.js";
 import { 
     informationRockets,
@@ -61,7 +62,9 @@ import {
 
 import {
     getAllHistory,
-    getAllHistoryId
+    getAllHistoryId,
+    informationOfHistory1,
+    informationOfHistory2
 } from "../modules/history.js"
 
 import {
@@ -441,7 +444,7 @@ const getDragonsId = async(e)=>{
     let dragons = await getAllDragonsId(e.target.id);
     console.log(dragons);
     await clear()
-    await nameCrew(dragons.name)
+    await nameDragons(dragons.name)
     await informationOfDragons1(dragons)
     await informationOfDragons2(dragons)
 
@@ -508,8 +511,12 @@ const getHistoryId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    let crew = await getAllHistoryId(e.target.id);
-    console.log(crew);
+    let history = await getAllHistoryId(e.target.id);
+    console.log(history);
+    await clear()
+    await nameHistory(history.title)
+    await informationOfHistory1(history)
+    await informationOfHistory2(history)
 
     // await informationRockets(Rocket.country, Rocket.description)
     

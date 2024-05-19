@@ -21,3 +21,9 @@ export const nameDragons = async(name)=>{
     header__title.innerHTML = "";
     header__title.textContent = name;
 }
+
+export const nameHistory = async(name)=>{
+    let header__title = document.querySelector("#header__title");
+    header__title.innerHTML = "";
+    header__title.textContent = name;
+}
