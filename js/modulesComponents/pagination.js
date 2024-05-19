@@ -10,7 +10,8 @@ import {
     nameHistory,
     nameLandpads,
     nameLaunches,
-    nameLaunchpads
+    nameLaunchpads,
+    nameCapsules
 } from "./title.js";
 import { 
     informationRockets,
@@ -39,7 +40,10 @@ import {
 } from "../modulesComponents/progressBar.js";
 ///
 import { 
-    getAllCapsules 
+    getAllCapsules,
+    getAllCapsulesId,
+    informationOfCapsules1,
+    informationOfCapsules2
 } from "../modules/capsules.js";
 
 import {
@@ -221,6 +225,8 @@ export const paginationRockets = async()=>{
     return div;
 }
 
+// ----------------------------------------------------------
+
 const getCapsulesId = async(e)=>{
     e.preventDefault();
     if(e.target.dataset.page){
@@ -235,8 +241,12 @@ const getCapsulesId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    // let Rocket = await getAllRocketsId(e.target.id);
-    // console.log(Rocket);
+    let capsules = await getAllCapsulesId(e.target.id);
+    console.log(capsules);
+    await clear()
+    await nameCapsules(capsules.serial)
+    await informationOfCapsules1(capsules)
+    await informationOfCapsules2(capsules)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
