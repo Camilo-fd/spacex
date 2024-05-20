@@ -64,7 +64,9 @@ import {
     getAllDragons,
     getAllDragonsId,
     informationOfDragons1,
-    informationOfDragons2
+    informationOfDragons2,
+    informationOfDragons3,
+    informationOfDragons4
 } from "../modules/dragons.js"
 
 import {
@@ -78,21 +80,27 @@ import {
     getAllLandpads,
     getAllLandpadsId,
     informationOfLandpads1,
-    informationOfLandpads2
+    informationOfLandpads2,
+    informationOfLandpads3,
+    informationOfLandpads4
 } from "../modules/landpads.js"
 
 import {
     getAllLaunches,
     getAllLaunchesId,
     informationOfLaunches1,
-    informationOfLaunches2
+    informationOfLaunches2,
+    informationOfLaunches3,
+    informationOfLaunches4
 } from "../modules/launches.js"
 
 import {
     getAllLaunchpads,
     getAllLaunchpadsId,
     informationOfLaunchpads1,
-    informationOfLaunchpads2
+    informationOfLaunchpads2,
+    informationOfLaunchpads3,
+    informationOfLaunchpads4
 } from "../modules/launchpads.js"
 
 export const load = async()=>{
@@ -466,6 +474,8 @@ const getDragonsId = async(e)=>{
     await nameDragons(dragons.name)
     await informationOfDragons1(dragons)
     await informationOfDragons2(dragons)
+    await informationOfDragons3(dragons)
+    await informationOfDragons4(dragons)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
@@ -606,6 +616,8 @@ const getLandpadsId = async(e)=>{
     await nameLandpads(landpads.name)
     await informationOfLandpads1(landpads)
     await informationOfLandpads2(landpads)
+    await informationOfLandpads3(landpads)
+    await informationOfLandpads4(landpads)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
@@ -676,6 +688,8 @@ const getLaunchesId = async(e)=>{
     await nameLaunches(launches.name)
     await informationOfLaunches1(launches)
     await informationOfLaunches2(launches)
+    await informationOfLaunches3(launches)
+    await informationOfLaunches4(launches)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
@@ -746,6 +760,8 @@ const getLaunchpadsId = async(e)=>{
     await nameLaunchpads(launchpads.name)
     await informationOfLaunchpads1(launchpads)
     await informationOfLaunchpads2(launchpads)
+    await informationOfLaunchpads3(launchpads)
+    await informationOfLaunchpads4(launchpads)
 
     // await informationRockets(Rocket.country, Rocket.description)
     

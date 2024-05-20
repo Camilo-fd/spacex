@@ -49,15 +49,25 @@ export const informationOfCores1= async (cores) =>{
             background-color: #e72d2d7a;
         }
 
+        b {
+            font-size: 1.2rem
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>last_update:</b> ${cores.last_update}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/actualizacion.svg">
+                    <b>última actualización:</b> ${cores.last_update}
+                </td>
             </tr>
             <tr>
-                <td><b>status:</b> ${cores.status}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <b>estado:</b> ${cores.status}
+                </td>
             </tr>
         </tbody>
     </table>
@@ -78,11 +88,22 @@ export const informationOfCores2= async (cores) =>{
         
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
             color: white; 
         }
         
+        td {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 0.5rem
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
         th {
             background-color: #e72d2d7a;
         }
@@ -96,11 +117,17 @@ export const informationOfCores2= async (cores) =>{
     <table>
         <tbody>
             <tr>
-                <td><b>id:</b> ${cores.id}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <b>id:</b> ${cores.id}
+                </td>
             </tr>
             <tr>
-            <td><b>launches:</b> ${cores.launches}</td>
-        </tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <b>lanzamientos:</b> ${cores.launches}
+                </td>
+            </tr>
         </tbody>
     </table>
 

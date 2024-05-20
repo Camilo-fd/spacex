@@ -35,9 +35,10 @@ export const informationOfCapsules1= async (capsules) =>{
         }
         
         th, td {
+            align-items: center;
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
             color: white; 
         }
         
@@ -49,15 +50,27 @@ export const informationOfCapsules1= async (capsules) =>{
             background-color: #e72d2d7a;
         }
 
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>última actualización:</b> ${capsules.last_update}</td>
+                
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/actualizacion.svg">
+                    <b>última actualización:</b> ${capsules.last_update}
+                </td>
             </tr>
             <tr>
-                <td><b>launches:</b> ${capsules.launches[0]}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <b>launches:</b> ${capsules.launches[0]}
+                </td>
             </tr>
         </tbody>
     </table>
@@ -78,11 +91,21 @@ export const informationOfCapsules2= async (capsules) =>{
         
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
             color: white; 
         }
         
+        td {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 0.5rem
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
         th {
             background-color: #e72d2d7a;
         }
@@ -91,18 +114,31 @@ export const informationOfCapsules2= async (capsules) =>{
             background-color: #e72d2d7a;
         }
 
+        b {
+            font-size: 1.2rem
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>estado:</b> ${capsules.status}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <b>estado:</b> ${capsules.status}
+                </td>
             </tr>
             <tr>
-                <td><b>tipo:</b> ${capsules.type}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/tipo.svg">
+                    <b>tipo:</b> ${capsules.type}
+                </td>
             </tr>
             <tr>
-                <td><b>id:</b> ${capsules.id}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <b>id:</b> ${capsules.id}
+                </td>
             </tr>
         </tbody>
     </table>

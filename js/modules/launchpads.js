@@ -1,4 +1,5 @@
-export const getAllLaunchpads = async (page,limit)=>{
+
+    export const getAllLaunchpads = async (page,limit)=>{
     let config = {
         headers:{
             "content-type": "application/json"
@@ -36,11 +37,30 @@ export const informationOfLaunchpads1= async (launchpads) =>{
         
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
             color: white; 
         }
         
+        td {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 0.5rem
+        }
+
+        .tb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
         th {
             background-color: #e72d2d7a;
         }
@@ -49,19 +69,33 @@ export const informationOfLaunchpads1= async (launchpads) =>{
             background-color: #e72d2d7a;
         }
 
+        b {
+            font-size: 1.2rem
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>nombre_completo:</b> ${launchpads.full_name}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <b>nombre_completo:</b> ${launchpads.full_name}
+                </td>
             </tr>
             <tr>
-                <td><b>localidad:</b> ${launchpads.locality}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <b>localidad:</b> ${launchpads.locality}
+                </td>
             </tr>
             <tr>
-                <td><b>region:</b> ${launchpads.region}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <b>region:</b> ${launchpads.region}
+                </td>
             </tr>
+
         </tbody>
     </table>
 
@@ -99,13 +133,130 @@ export const informationOfLaunchpads2= async (launchpads) =>{
     <table>
         <tbody>
             <tr>
-                <td><b>zona_horaria:</b> ${launchpads.timezone}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <b>zona_horaria:</b> ${launchpads.timezone}
+                </td>
             </tr>
             <tr>
-                <td><b>stato:</b> ${launchpads.status}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <b>estado:</b> ${launchpads.status}
+                </td>
             </tr>
             <tr>
-                <td><b>id:</b> ${launchpads.id}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <b>id:</b> ${launchpads.id}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    `
+}
+
+export const informationOfLaunchpads3= async (launchpads) =>{
+
+    let centerCapculesRight = document.querySelector("#information__2")
+    centerCapculesRight.innerHTML = /*html*/ `
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: white; 
+        }
+        
+        th {
+            background-color: #e72d2d7a;
+        }
+        
+        tr {
+            background-color: #e72d2d7a;
+        }
+
+    </style>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <b>estado:</b> ${launchpads.status}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <b>detalles:</b> ${launchpads.details}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    `
+}
+
+export const informationOfLaunchpads4= async (launchpads) =>{
+
+    let centerCapculesRight = document.querySelector("#description__item")
+    centerCapculesRight.innerHTML = /*html*/ `
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: white; 
+        }
+        
+        th {
+            background-color: #e72d2d7a;
+        }
+        
+        tr {
+            background-color: #e72d2d7a;
+        }
+
+    </style>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <b>latitud:</b> ${launchpads.latitude}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <b>longitud:</b> ${launchpads.longitude}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <b>intentos_lanzamiento:</b> ${launchpads.launch_attempts}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <b>lanzamiento_éxitos:</b> ${launchpads.launch_successes}
+                </td>
             </tr>
         </tbody>
     </table>

@@ -36,11 +36,22 @@ export const informationOfHistory1= async (history) =>{
         
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
             color: white; 
         }
         
+        td {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 0.5rem
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
         th {
             background-color: #e72d2d7a;
         }
@@ -54,13 +65,22 @@ export const informationOfHistory1= async (history) =>{
     <table>
         <tbody>
             <tr>
-                <td><b>links:</b> ${history.links.article}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/links.svg">
+                    <b>links:</b> ${history.links.article}
+                </td>
             </tr>
             <tr>
-                <td><b>event_date_utc:</b> ${history.event_date_utc}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/evento.svg">
+                    <b>evento_fecha_utc:</b> ${history.event_date_utc}
+                </td>
             </tr>
             <tr>
-                <td><b>event_date_unix:</b> ${history.event_date_unix}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/evento.svg">
+                    <b>evento_fecha_unix:</b> ${history.event_date_unix}
+                </td>
             </tr>
         </tbody>
     </table>
@@ -94,16 +114,26 @@ export const informationOfHistory2= async (history) =>{
             background-color: #e72d2d7a;
         }
 
+        b {
+            font-size: 1.2rem
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>detalles:</b> ${history.details}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <b>detalles:</b> ${history.details}
+                </td>
             </tr>
             <tr>
-            <td><b>id:</b> ${history.id}</td>
-        </tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <b>id:</b> ${history.id}
+                </td>
+            </tr>
         </tbody>
     </table>
 

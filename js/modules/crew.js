@@ -36,11 +36,22 @@ export const informationOfCrew1= async (crew) =>{
         
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
             text-align: left;
             color: white; 
         }
         
+        td {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 0.5rem
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
         th {
             background-color: #e72d2d7a;
         }
@@ -49,15 +60,25 @@ export const informationOfCrew1= async (crew) =>{
             background-color: #e72d2d7a;
         }
 
+        b {
+            font-size: 1.2rem
+        }
+
     </style>
 
     <table>
         <tbody>
             <tr>
-                <td><b>last_update:</b> ${crew.agency}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/agencia.svg">
+                    <b>agencia:</b> ${crew.agency}
+                </td>
             </tr>
             <tr>
-                <td><b>status:</b> ${crew.status}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <b>wikipedia:</b> ${crew.wikipedia}
+                </td>
             </tr>
         </tbody>
     </table>
@@ -96,11 +117,17 @@ export const informationOfCrew2= async (crew) =>{
     <table>
         <tbody>
             <tr>
-                <td><b>id:</b> ${crew.wikipedia}</td>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <b>estado:</b> ${crew.status}
+                </td>
             </tr>
             <tr>
-            <td><b>launches:</b> ${crew.launches}</td>
-        </tr>
+                <td>
+                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <b>lanzamientos:</b> ${crew.launches}
+                </td>
+            </tr>
         </tbody>
     </table>
 
