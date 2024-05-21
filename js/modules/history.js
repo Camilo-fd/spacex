@@ -66,19 +66,19 @@ export const informationOfHistory1= async (history) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/links.svg">
+                    <img src="storage/img/icons/links.svg">
                     <b>links:</b> ${history.links.article}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/evento.svg">
+                    <img src="storage/img/icons/evento.svg">
                     <b>evento_fecha_utc:</b> ${history.event_date_utc}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/evento.svg">
+                    <img src="storage/img/icons/evento.svg">
                     <b>evento_fecha_unix:</b> ${history.event_date_unix}
                 </td>
             </tr>
@@ -124,13 +124,13 @@ export const informationOfHistory2= async (history) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>detalles:</b> ${history.details}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${history.id}
                 </td>
             </tr>

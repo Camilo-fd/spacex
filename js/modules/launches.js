@@ -71,19 +71,19 @@ export const informationOfLaunches1= async (launches) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/actualizacion.svg">
+                    <img src="storage/img/icons/actualizacion.svg">
                     <b>última actualización:</b> ${launches.static_fire_date_utc}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/agencia.svg">
+                    <img src="storage/img/icons/agencia.svg">
                     <b>fecha_incendio_unix:</b> ${launches.static_fire_date_unix}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/propulsores.svg">
+                    <img src="storage/img/icons/propulsores.svg">
                     <b>last_update:</b> ${launches.rocket}
                 </td>
             </tr>
@@ -125,19 +125,19 @@ export const informationOfLaunches2= async (launches) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>nombre:</b> ${launches.name}
                 </td>
             </tr>
             <tr>    
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/primer_vuelo.svg">
+                    <img src="storage/img/icons/primer_vuelo.svg">
                     <b>número_vuelo:</b> ${launches.flight_number}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>fracaso-razon:</b> ${launches.failures[0].reason}
                 </td>
             </tr>
@@ -179,25 +179,25 @@ export const informationOfLaunches3= async (launches) =>{
         <tbody>
             <tr>    
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>transmicion_web:</b> ${launches.links.webcast}
                 </td>
             </tr>
             <tr>    
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>articulo:</b> ${launches.links.article}
                 </td>
             </tr>
             <tr>    
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>wikipedia:</b> ${launches.links.wikipedia}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>detalles:</b> ${launches.details}
                 </td>
             </tr>
@@ -239,25 +239,25 @@ export const informationOfLaunches4= async (launches) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>fecha_utc:</b> ${launches.date_utc}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>fecha_unix:</b> ${launches.date_unix}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>fecha_local:</b> ${launches.date_local}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">   
+                    <img src="storage/img/icons/detalles.svg">   
                     <b>fecha_precisión:</b> ${launches.date_precision}
                 </td>
             </tr>

@@ -59,13 +59,13 @@ export const informationOfCores1= async (cores) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/actualizacion.svg">
+                    <img src="storage/img/icons/actualizacion.svg">
                     <b>última actualización:</b> ${cores.last_update}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>estado:</b> ${cores.status}
                 </td>
             </tr>
@@ -118,13 +118,13 @@ export const informationOfCores2= async (cores) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${cores.id}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <img src="storage/img/icons/lanzamiento.svg">
                     <b>lanzamientos:</b> ${cores.launches}
                 </td>
             </tr>

@@ -79,19 +79,19 @@ export const informationOfLaunchpads1= async (launchpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>nombre_completo:</b> ${launchpads.full_name}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>localidad:</b> ${launchpads.locality}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>region:</b> ${launchpads.region}
                 </td>
             </tr>
@@ -134,19 +134,19 @@ export const informationOfLaunchpads2= async (launchpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>zona_horaria:</b> ${launchpads.timezone}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>estado:</b> ${launchpads.status}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${launchpads.id}
                 </td>
             </tr>
@@ -188,13 +188,13 @@ export const informationOfLaunchpads3= async (launchpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>estado:</b> ${launchpads.status}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>detalles:</b> ${launchpads.details}
                 </td>
             </tr>
@@ -236,25 +236,25 @@ export const informationOfLaunchpads4= async (launchpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <img src="storage/img/icons/medidas.svg">
                     <b>latitud:</b> ${launchpads.latitude}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <img src="storage/img/icons/medidas.svg">
                     <b>longitud:</b> ${launchpads.longitude}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <img src="storage/img/icons/lanzamiento.svg">
                     <b>intentos_lanzamiento:</b> ${launchpads.launch_attempts}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <img src="storage/img/icons/lanzamiento.svg">
                     <b>lanzamiento_éxitos:</b> ${launchpads.launch_successes}
                 </td>
             </tr>

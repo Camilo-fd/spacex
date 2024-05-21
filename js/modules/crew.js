@@ -71,13 +71,13 @@ export const informationOfCrew1= async (crew) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/agencia.svg">
+                    <img src="storage/img/icons/agencia.svg">
                     <b>agencia:</b> ${crew.agency}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>wikipedia:</b> ${crew.wikipedia}
                 </td>
             </tr>
@@ -119,13 +119,13 @@ export const informationOfCrew2= async (crew) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>estado:</b> ${crew.status}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <img src="storage/img/icons/lanzamiento.svg">
                     <b>lanzamientos:</b> ${crew.launches}
                 </td>
             </tr>

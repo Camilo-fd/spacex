@@ -72,19 +72,19 @@ export const informationOfLandpads1= async (landpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>nombre_completo:</b> ${landpads.full_name}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>locacion:</b> ${landpads.locality}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>region:</b> ${landpads.region}
                 </td>
             </tr>
@@ -126,25 +126,25 @@ export const informationOfLandpads2= async (landpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <img src="storage/img/icons/medidas.svg">
                     <b>latitud:</b> ${landpads.latitude}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/medidas.svg">
+                    <img src="storage/img/icons/medidas.svg">
                     <b>longitud:</b> ${landpads.longitude}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/aterrizaje.svg">
+                    <img src="storage/img/icons/aterrizaje.svg">
                     <b>intentos_de_aterrizaje:</b> ${landpads.landing_attempts}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/aterrizaje.svg">
+                    <img src="storage/img/icons/aterrizaje.svg">
                     <b>aterrizaje_éxitos:</b> ${landpads.landing_successes}
                 </td>
             </tr>
@@ -202,25 +202,25 @@ export const informationOfLandpads3= async (landpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/tipo.svg">
+                    <img src="storage/img/icons/tipo.svg">
                     <b>tipo:</b> ${landpads.type}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>wikipedia:</b> ${landpads.wikipedia}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${landpads.id}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>status:</b> ${landpads.status}
                 </td>
             </tr>
@@ -265,7 +265,7 @@ export const informationOfLandpads4= async (landpads) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/detalles.svg">
+                    <img src="storage/img/icons/detalles.svg">
                     <b>detalles:</b> ${landpads.details}
                 </td>
             </tr>

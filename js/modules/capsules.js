@@ -62,13 +62,13 @@ export const informationOfCapsules1= async (capsules) =>{
             <tr>
                 
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/actualizacion.svg">
+                    <img src="storage/img/icons/actualizacion.svg">
                     <b>última actualización:</b> ${capsules.last_update}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/lanzamiento.svg">
+                    <img src="storage/img/icons/lanzamiento.svg">
                     <b>launches:</b> ${capsules.launches[0]}
                 </td>
             </tr>
@@ -124,19 +124,19 @@ export const informationOfCapsules2= async (capsules) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/estado.svg">
+                    <img src="storage/img/icons/estado.svg">
                     <b>estado:</b> ${capsules.status}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/tipo.svg">
+                    <img src="storage/img/icons/tipo.svg">
                     <b>tipo:</b> ${capsules.type}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${capsules.id}
                 </td>
             </tr>

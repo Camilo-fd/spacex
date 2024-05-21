@@ -70,20 +70,20 @@ export const informationOfDragons1= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/primer_vuelo.svg">
+                    <img src="storage/img/icons/primer_vuelo.svg">
                     <b>primer_vuelo:</b> ${dragons.first_flight}
                 </td>
             </tr>
             <tr>
 
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/escudo_termico.svg">
+                    <img src="storage/img/icons/escudo_termico.svg">
                     <b>escudo térmico:</b> ${dragons.heat_shield.material}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/tipo.svg">
+                    <img src="storage/img/icons/tipo.svg">
                     <b>tipo:</b> ${dragons.type}
                 </td>
             </tr>
@@ -125,19 +125,19 @@ export const informationOfDragons2= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/tipo.svg">
+                    <img src="storage/img/icons/tipo.svg">
                     <b>activo:</b> ${dragons.active}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/tripulacion.svg">
+                    <img src="storage/img/icons/tripulacion.svg">
                     <b>capacidad_tripulación:</b> ${dragons.crew_capacity}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id:</b> ${dragons.id}
                 </td>
             </tr>
@@ -180,19 +180,19 @@ export const informationOfDragons3= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/propulsores.svg">
+                    <img src="storage/img/icons/propulsores.svg">
                     <b>propulsores-tipo:</b> ${dragons.thrusters[0].type}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>wikipedia:</b> ${dragons.wikipedia}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>descripcion:</b> ${dragons.description}
                 </td>
             </tr>
@@ -234,37 +234,37 @@ export const informationOfDragons4= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/combustible.svg">
+                    <img src="storage/img/icons/combustible.svg">
                     <b>combustible_1:</b> ${dragons.thrusters[0].fuel_1}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/combustible.svg">
+                    <img src="storage/img/icons/combustible.svg">
                     <b>combustible_2:</b> ${dragons.thrusters[0].fuel_2}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/pared_lateral.svg">
+                    <img src="storage/img/icons/pared_lateral.svg">
                     <b>pared_lateral_ángulo:</b> ${dragons.sidewall_angle_deg}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/orbita.svg">
+                    <img src="storage/img/icons/orbita.svg">
                     <b>duración_de_órbita:</b> ${dragons.orbit_duration_yr}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/masa.svg">
+                    <img src="storage/img/icons/masa.svg">
                     <b>masa_seca_kg:</b> ${dragons.dry_mass_kg}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/masa.svg">
+                    <img src="storage/img/icons/masa.svg">
                     <b>lb_masa_seca:</b> ${dragons.dry_mass_lb}
                 </td>
             </tr>

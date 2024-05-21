@@ -71,43 +71,43 @@ export const informationOfCompany1 = async (Company) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>direccion: </b>${Company.headquarters.address}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>ciudad: </b>${Company.headquarters.city}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/ubicacion.svg">
+                    <img src="storage/img/icons/ubicacion.svg">
                     <b>estado: </b>${Company.headquarters.state}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>sitio_web: </b>${Company.links.website}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>flickr: </b>${Company.links.flickr}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>twitter: </b>${Company.links.twitter}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>alon_twitter: </b>${Company.links.elon_twitter}
                 </td>
             </tr>
@@ -162,37 +162,37 @@ export const informationOfCompany2 = async (Company) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>resumen: </b>${Company.summary}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>id: </b>${Company.id}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>cto_propulsion: </b>${Company.cto_propulsion}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>coo: </b>${Company.coo}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>cto: </b>${Company.cto}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>ceo: </b>${Company.ceo}
                 </td>
             </tr>
@@ -247,25 +247,25 @@ export const informationOfCompany3 = async (Company) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>nombre: </b>${Company.name}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>fundador: </b>${Company.founder}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>valoracion: </b>${Company.valuation}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>id: </b>${Company.id}
                 </td>
             </tr>
@@ -314,25 +314,25 @@ export const informationOfCompany3 = async (Company) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>fundada: </b>${Company.founded}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/identificador.svg">
+                    <img src="storage/img/icons/identificador.svg">
                     <b>empleados: </b>${Company.employees}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>vehiculos: </b>${Company.vehicles}
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
+                    <img src="storage/img/icons/wikipedia.svg">
                     <b>sitios_lanzamiento: </b>${Company.launch_sites}
                 </td>
             </tr>
