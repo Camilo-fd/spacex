@@ -10,8 +10,8 @@
 
 body {
     /* background: linear-gradient(var(--color--one), var(--color--one--rgba)); */
-    background-image: url(../storage/img/icons/espacio.jpeg);
-    /* background-repeat: no-repeat;     */
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2gxdmdtemUxenFobXE2cGg5c3ltMmtqbnBuM2xyeGRzazR0eGx0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYJAzu5RTVSGeiY/giphy.gif);
+    background-size: cover;
 }
 
 *::-webkit-scrollbar {
@@ -36,9 +36,9 @@ body {
 
 .header__title {
     /* background: red; */
-    color: var(--color--five);
+    color: var(--color--one);
     height: 10vh;
-    font-size: 2.3rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;

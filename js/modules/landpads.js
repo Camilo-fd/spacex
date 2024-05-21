@@ -227,6 +227,9 @@ export const informationOfLandpads3= async (landpads) =>{
         </tbody>
     </table>
 
+    <img style="height: 50%; width: 80%; margin-left: 1rem; margin-top: 2rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXFqaTE4aWw1c2Rybmh1ODYyOWc1cXlreWpqbDd5dWpoZWE2b3M5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btZ3T6y3JTmjg4w/giphy.gif">
+
+
     `
 }
 
@@ -268,6 +271,8 @@ export const informationOfLandpads4= async (landpads) =>{
             </tr>
         </tbody>
     </table>
+
+    <img style="height: 40%; width: 90%; margin-left: 1rem; margin-top: 2rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3JnbGpldW1ydzNub2Z6a2g5b3FiYXJvdHMxaWwxc2Rpb2l4aGt3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7guVjhMF9qBKE/giphy.gif">
 
     `
 }

@@ -25,13 +25,14 @@ export const getAllCrewId = async (crewId)=>{
 
 export const informationOfCrew1= async (crew) =>{
 
-    let centerCapculesLeft = document.querySelector("#information__table__1")
+    let centerCapculesLeft = document.querySelector("#information__table__2")
     centerCapculesLeft.innerHTML = /*html*/ `
     
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 3rem;
         }
         
         th, td {
@@ -88,7 +89,7 @@ export const informationOfCrew1= async (crew) =>{
 
 export const informationOfCrew2= async (crew) =>{
 
-    let centerCapculesRight = document.querySelector("#information__table__2")
+    let centerCapculesRight = document.querySelector("#information__table__1")
     centerCapculesRight.innerHTML = /*html*/ `
     
     <style>
@@ -101,7 +102,7 @@ export const informationOfCrew2= async (crew) =>{
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
-            color: white; 
+            color: white;
         }
         
         th {
@@ -133,3 +134,23 @@ export const informationOfCrew2= async (crew) =>{
 
     `
 }
+
+export const informationOfCrew3= async (crew) =>{
+
+    let centerCapculesCenterImg = document.querySelector("#section__image")
+    centerCapculesCenterImg.innerHTML = /*html*/ `
+        <img style="width: 100%; height: 350px" src="${crew.image}">
+    `
+        
+    let centerCapculesLeftImg = document.querySelector("#description__item")
+    centerCapculesLeftImg.innerHTML = /*html*/ `    
+        <img style="height: 70%; width: 300px; margin-left: 1rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU4Y3cxcHlvZGE5ZHpmMHA0c2ZlaWVta2I2aDl5ZDFlYWtnaXBqMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JoIcxJVEBTe1NBj9hR/giphy.gif">
+    `
+    
+    let centerCapculesRightImg = document.querySelector("#information__2")
+    centerCapculesRightImg.innerHTML = /*html*/ `
+        <img style="height: 70%; width: 300px; margin-right: 1rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhhZG5vY3g4b3FkNHJlbW95dG1hbjgwdjlrbWJ3b2V4d2RpM3FnOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lZSj7A3Dq8gk4qhEfB/giphy.gif">
+    `
+}
+
+

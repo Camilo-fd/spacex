@@ -180,6 +180,12 @@ export const informationOfDragons3= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
+                    <img src="../storage/img/icons/iconos_texto/propulsores.svg">
+                    <b>propulsores-tipo:</b> ${dragons.thrusters[0].type}
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <img src="../storage/img/icons/iconos_texto/wikipedia.svg">
                     <b>wikipedia:</b> ${dragons.wikipedia}
                 </td>
@@ -228,12 +234,6 @@ export const informationOfDragons4= async (dragons) =>{
         <tbody>
             <tr>
                 <td>
-                    <img src="../storage/img/icons/iconos_texto/propulsores.svg">
-                    <b>propulsores-tipo:</b> ${dragons.thrusters[0].type}
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <img src="../storage/img/icons/iconos_texto/combustible.svg">
                     <b>combustible_1:</b> ${dragons.thrusters[0].fuel_1}
                 </td>
@@ -271,5 +271,10 @@ export const informationOfDragons4= async (dragons) =>{
         </tbody>
     </table>
 
+    `
+
+    let centerCapculesImg = document.querySelector("#section__image")
+    centerCapculesImg.innerHTML = /*html*/ `
+        <img style="height: 70%; width: 300px; margin-left: 2rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXM2cG1xbDZsZjJ3am9nYnBkMzAxcHcwYTY0b3A4MHAyZ3psd3AzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LjYvYvNufttgZsF7WR/giphy-downsized-large.gif">
     `
 }

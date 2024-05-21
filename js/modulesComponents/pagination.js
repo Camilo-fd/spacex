@@ -43,8 +43,15 @@ import {
     getAllCapsules,
     getAllCapsulesId,
     informationOfCapsules1,
-    informationOfCapsules2
+    informationOfCapsules2,
 } from "../modules/capsules.js";
+
+import {
+    getCompanyFetch,
+    informationOfCompany1,
+    informationOfCompany2,
+    informationOfCompany3
+} from "../modules/company.js"
 
 import {
     getAllCores,
@@ -57,7 +64,8 @@ import {
     getAllCrew,
     getAllCrewId,
     informationOfCrew1,
-    informationOfCrew2
+    informationOfCrew2,
+    informationOfCrew3
 } from "../modules/crew.js"
 
 import {
@@ -73,7 +81,8 @@ import {
     getAllHistory,
     getAllHistoryId,
     informationOfHistory1,
-    informationOfHistory2
+    informationOfHistory2,
+    informationOfImagen
 } from "../modules/history.js"
 
 import {
@@ -306,10 +315,14 @@ export const paginationCapsules = async(page=1, limit=4)=>{
 // ----------------------------------------------------------
 
 export const getCompany = async () => {
-    let res = await fetch("https://api.spacexdata.com/v4/company");
-    let data = await res.json();
-    return data;
-};
+    let Company = await getCompanyFetch()
+    await clear()
+    await nameRockets(Company.name)
+    await informationOfCompany1(Company)
+    await informationOfCompany2(Company)
+    await informationOfCompany3(Company)
+
+  };
 
 // ----------------------------------------------------------
 
@@ -403,7 +416,7 @@ const getCrewId = async(e)=>{
     await nameCrew(crew.name)
     await informationOfCrew1(crew)
     await informationOfCrew2(crew)
-    
+    await informationOfCrew3(crew)
 
     // await informationRockets(Rocket.country, Rocket.description)
     
@@ -546,6 +559,7 @@ const getHistoryId = async(e)=>{
     await nameHistory(history.title)
     await informationOfHistory1(history)
     await informationOfHistory2(history)
+    await informationOfImagen(history)
 
     // await informationRockets(Rocket.country, Rocket.description)
     

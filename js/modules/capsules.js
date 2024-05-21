@@ -144,4 +144,18 @@ export const informationOfCapsules2= async (capsules) =>{
     </table>
 
     `
+
+
+    let centerCapculesLeftImg = document.querySelector("#description__item")
+    centerCapculesLeftImg.innerHTML = /*html*/ `
+
+        <img style="height: 300px; width: 350px; margin-left: 2rem; margin-top: 5rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjU4bnNrb3FnZ3lsZTRocHg3cXc2NXBlbm9uN24yOTZsOGE2MXVxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btZ3T6y3JTmjg4w/giphy.gif">
+    `
+
+    let centerCapculesRightImg = document.querySelector("#information__2")
+    centerCapculesRightImg.innerHTML = /*html*/ `
+
+        <img style="height: 300px; width: 350px; margin-right: 2rem; margin-top: 5rem" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNnbWEyZGNhandpZ3dkZ2UzdmE2cm4zNnZrNTV4YXZ6b2w3OWtwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CuKEZdZ3V01gI/giphy.gif">
+    `
 }
+
